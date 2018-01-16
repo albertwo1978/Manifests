@@ -35,7 +35,7 @@ spec:
             cpu: 10m
             memory: 20Mi
       nodeSelector:
-        services: backend blah
+        services: backend
 
 ---
 apiVersion: v1
