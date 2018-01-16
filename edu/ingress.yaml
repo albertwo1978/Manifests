@@ -32,4 +32,4 @@ spec:
         - --default-backend-service=$(POD_NAMESPACE)/default-http-backend
         - --default-ssl-certificate=$(POD_NAMESPACE)/xipio-tls-cert
       nodeSelector:
-        beta.kubernetes.io/os: linux
+        services: backend
