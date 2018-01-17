@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: guestbook-ingress
+spec:
+  tls:
+  - hosts:
+    - guestbook.40.70.2.20.xip.io
+    secretName: xipio-tls-cert
+  rules:
+    - host: guestbook.40.70.2.20.xip.io
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: frontend
+              servicePort: 80  
