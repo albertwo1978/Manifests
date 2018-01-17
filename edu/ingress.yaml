@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx-ingress-lb
 spec:
-  replicas: 1
+  replicas: 1 blah
   template:
     metadata:
       labels:
