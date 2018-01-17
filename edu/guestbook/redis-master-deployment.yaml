@@ -26,4 +26,4 @@ spec:
         ports:
         - containerPort: 6379
       nodeSelector:
-        services: frontend # move to backend in a cluster with more nodes
+        services: backend 
