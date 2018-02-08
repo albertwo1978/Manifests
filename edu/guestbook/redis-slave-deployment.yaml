@@ -7,14 +7,14 @@ spec:
     matchLabels:
       app: redis
       role: slave
-      tier: backend
+      tier: frontend
   replicas: 2
   template:
     metadata:
       labels:
         app: redis
         role: slave
-        tier: backend
+        tier: frontend
     spec:
       containers:
       - name: slave
@@ -37,4 +37,4 @@ spec:
         ports:
         - containerPort: 6379
       nodeSelector:
-        services: backend 
+        services: frontend 

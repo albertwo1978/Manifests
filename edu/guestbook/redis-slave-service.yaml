@@ -5,11 +5,11 @@ metadata:
   labels:
     app: redis
     role: slave
-    tier: backend
+    tier: frontend
 spec:
   ports:
   - port: 6379
   selector:
     app: redis
     role: slave
-    tier: backend
+    tier: frontend
