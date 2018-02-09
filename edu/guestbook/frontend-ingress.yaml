@@ -7,10 +7,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - guestbook.40.70.2.20.xip.io
+    - guestbook.52.177.193.214.xip.io
     secretName: xipio-tls-cert
   rules:
-    - host: guestbook.40.70.2.20.xip.io
+    - host: guestbook.52.177.193.214.xip.io
       http:
         paths:
           - path: /
