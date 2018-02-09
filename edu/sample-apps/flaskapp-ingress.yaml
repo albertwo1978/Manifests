@@ -15,5 +15,5 @@ spec:
         paths:
           - path: /
             backend:
-              serviceName: frontend
+              serviceName: flaskapp-service
               servicePort: 5000  
