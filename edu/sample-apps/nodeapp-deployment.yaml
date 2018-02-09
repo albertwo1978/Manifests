@@ -33,6 +33,6 @@ spec:
           # uncomment the line below:
           # value: env
         ports:
-        - containerPort: 80
+        - containerPort: 8080
       nodeSelector:
         services: frontend # move out of frontend pool when additional backend agent nodes added
