@@ -29,9 +29,7 @@ docker run --name <new_container_name> -p 5000:5000 -d <new_image_name>
 docker tag <new_image_name> <docker_id>/<new_image_name>
 docker push <docker_id>/<new_image_name>
 
-#in case you later forget what it's called, just do a quick search of the registry
 
-docker search <docker_id>
 
 --Used these steps below to create a simple Node App called app.js --
 
@@ -71,9 +69,5 @@ docker run --name <new_container_name> -p 8080:8080 -d <new_image_name>
 
 docker tag <new_image_name> <docker_id>/<new_image_name>
 docker push <docker_id>/<new_image_name>
-
-#in case you later forget what it's called, just do a quick search of the registry
-
-docker search <docker_id>
 
 #In case you haven't read them, I highly recommend Kubernetes Up and Running and Kubernetes In Action. Both great reads to level up! 

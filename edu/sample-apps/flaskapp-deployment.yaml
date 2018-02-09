@@ -15,8 +15,8 @@ spec:
         tier: frontend
     spec:
       containers:
-      - name: py-flaskapp
-        image: gcr.io/albertwo/alwflaskapp
+      - name: flaskapp
+        image: albertwo/alwflaskapp
         resources:
           requests:
             cpu: 100m
