@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: nodeapp-ingress
+spec:
+  tls:
+  - hosts:
+    - nodeapp.52.177.193.214.xip.io
+    secretName: xipio-tls-cert
+  rules:
+    - host: nodeapp.52.177.193.214.xip.io
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: frontend
+              servicePort: 8080  

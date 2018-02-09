@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: flaskapp-ingress
+spec:
+  tls:
+  - hosts:
+    - flaskapp.52.177.193.214.xip.io
+    secretName: xipio-tls-cert
+  rules:
+    - host: flaskapp.52.177.193.214.xip.io
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: frontend
+              servicePort: 5000  
