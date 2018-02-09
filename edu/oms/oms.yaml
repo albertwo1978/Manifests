@@ -26,8 +26,8 @@ spec:
           name: docker-sock
         - mountPath: /var/log 
           name: host-log
-        - mountPath: /etc/oms-agent-secret
-          name: oms-agent-secret
+        - mountPath: /etc/omsagent-secret
+          name: omsagent-secret
           readOnly: true
 	- mountPath: /var/lib/docker/containers 
           name: containerlog-path  
@@ -54,7 +54,7 @@ spec:
     - name: host-log
       hostPath:
        path: /var/log 
-    - name: oms-agent-secret
+    - name: omsagent-secret
       secret:
        secretName: oms-agent-secret
     - name: containerlog-path
