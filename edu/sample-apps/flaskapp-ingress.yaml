@@ -7,10 +7,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - flaskapp.52.177.193.214.xip.io
+    - flaskapp.13.68.88.114.xip.io
     secretName: xipio-tls-cert
   rules:
-    - host: flaskapp.52.177.193.214.xip.io
+    - host: flaskapp.13.68.88.114.xip.io
       http:
         paths:
           - path: /
