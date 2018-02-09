@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nodeapp
-        image: gcr.io/albertwo/alwnodeapp
+        image: albertwo/alwnodeapp:latest
         resources:
           requests:
             cpu: 100m

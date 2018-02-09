@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: flaskapp
-        image: albertwo/alwflaskapp
+        image: albertwo/alwflaskapp:latest
         resources:
           requests:
             cpu: 100m
