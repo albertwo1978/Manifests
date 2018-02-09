@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend
+  name: nodeapp-service
   labels:
     app: nodeapp
     tier: frontend
