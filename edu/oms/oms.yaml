@@ -28,7 +28,8 @@ spec:
           name: host-log
         - mountPath: /etc/omsagent-secret
           name: omsagent-secret
-	- mountPath: /var/lib/docker/containers 
+          readOnly: true
+        - mountPath: /var/lib/docker/containers 
           name: containerlog-path  
        livenessProbe:
         exec:
