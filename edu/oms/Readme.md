@@ -15,3 +15,10 @@ https://raw.githubusercontent.com/Microsoft/OMS-docker/master/Kubernetes/omsagen
 
 #run this command in the same directory as the yaml file to deploy the daemonset 
 kubectl create -f oms-daemonset.yaml 
+
+#navigate back to the OMS portal and create a Container Monitoring Solution
+https://<name_used_for_log_analytics_in_step_one>.portal.mms.microsoft.com
+
+#after you do this, you should also see a new Containers Solution in the same Resource Group where you create the Log Analytics Solution
+
+#within a few minutes, you should see data populating
