@@ -7,10 +7,11 @@ High level steps for setting up monitoring -
 https://github.com/kubernetes/helm/blob/master/docs/install.md
 
 #deploy Prometheus with helm
+#note - I set deployed to the monitoring namespace
 https://github.com/kubernetes/charts/tree/master/stable/prometheus
 
 #set up ingress 
-kubectl apply -f https://raw.githubusercontent.com/albertwo1978/Manifests/master/edu/monitoring/prometheus-ingress.yaml
+kubectl apply -f https://raw.githubusercontent.com/albertwo1978/Manifests/master/edu/monitoring/prometheus-ingress.yaml -n monitoring
 
 
 -- Option Two - Log Analytics (OMS) --

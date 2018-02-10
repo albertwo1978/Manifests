@@ -1,0 +1,19 @@
+server:
+  ingress:
+    ## If true, Prometheus server Ingress will be created
+    ##
+    enabled: true
+
+    ## Prometheus server Ingress hostnames
+    ## Must be provided if Ingress is enabled
+    ##
+    hosts:
+      - prometheus.13.68.84.48.xip.io
+
+    ## Prometheus server Ingress TLS configuration
+    ## Secrets must be manually created in the namespace
+    ##
+    tls:
+      - secretName: xipio-tls-cert
+        hosts:
+          - prometheus.13.68.84.48.xip.io
