@@ -104,7 +104,7 @@
             "type": "Microsoft.Network/virtualNetworks",
             "name": "[parameters('virtualNetworks_UC_Network_name')]",
             "apiVersion": "2017-06-01",
-            "location": "eastus2",
+            "location": "[resourceGroup().location]",
             "scale": null,
             "properties": {
                 "addressSpace": {
