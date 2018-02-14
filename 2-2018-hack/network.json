@@ -74,7 +74,10 @@
             "allowedValues": [
                 "Basic",
                 "Standard",
-                "HighPerformance"
+                "HighPerformance",
+                "VpnGw1",
+                "VpnGw2",
+                "VpnGw3"
             ],
             "metadata":{  
                 "description":"The Sku of the Gateway. This must be one of Basic, Standard or HighPerformance."
