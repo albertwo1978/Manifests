@@ -1,9 +1,22 @@
-Simple ingress controller example. Used the following blog as a guide. Since I am not testing hybrid (Windows and Linux) I did not follow the steps to create a separate agent pool or create the customer web apps. I instead replace the last steps with a guestbook app and two sample apps. Examples apps and high level setup instructions are located in their respective sub-directories. The nginx.yaml file is not currently used and can be ignored:
+Example containerized application that uses Zuul (Netflix OSS) for edge routing a simple Spring Boot application and host in Azure Kubernetes Service (AKS). 
 
-https://github.com/dougperkes/azure-acs-hybrid-cluster-migration
+NOTE: This repo can be used a loose guide for getting started, however, I did not put too much effort into precisely documenting each step. I loosely document the steps for AKS as well. Please feel free to add and submit a pull request if you have the time/desire. 
 
-After building this out, I deploy the following three apps behind the ingress controller:
-  1) Sample guestbook apps
-  2) Two sample apps - Instructions on how to build and containerize the demo apps are in the Readme. 
+The following guides were used as cheat sheets:
 
-Final step, I set up monitoring with both OMS and Prometheus - Very rudimentary setup (all default). Steps taken are in the monitoring sub-directory. 
+Building a micrservice architecture with Spring Boot and Docker (four part series):
+https://www.3pillarglobal.com/insights/building-a-microservice-architecture-with-spring-boot-and-docker-part-i
+
+Dockerizing a Spring Boot application:
+http://www.baeldung.com/dockerizing-spring-boot-application
+
+Skunkworks project for running containerized Zuul:
+https://github.com/Netflix-Skunkworks/zerotodocker
+
+Deploying an AKS cluster - This step assumes you already have Azure CLI installed and have access to an Azure Subscription:
+
+#create vnet
+az group create -n <RG-Name> -l eastus
+
+#create AKS cluster
+az aks create -g <RG-Name> -n <Cluster-Name> --node-count 2 --ssh-key-value ~/.ssh/id_rsa.pub
