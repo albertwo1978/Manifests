@@ -31,5 +31,3 @@ spec:
         - /nginx-ingress-controller
         - --default-backend-service=$(POD_NAMESPACE)/default-http-backend
         - --default-ssl-certificate=$(POD_NAMESPACE)/xipio-tls-cert
-      nodeSelector:
-        services: frontend

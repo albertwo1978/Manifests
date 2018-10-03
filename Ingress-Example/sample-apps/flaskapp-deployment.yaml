@@ -6,7 +6,6 @@ spec:
   selector:
     matchLabels:
       app: flaskapp
-      tier: frontend
   replicas: 1
   template:
     metadata:
@@ -34,5 +33,3 @@ spec:
           # value: env
         ports:
         - containerPort: 5000
-      nodeSelector:
-        services: frontend # move out of frontend pool when additional backend agent nodes added
