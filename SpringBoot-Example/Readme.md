@@ -4,9 +4,6 @@ NOTE: This repo can be used a loose guide for getting started, however, I did no
 
 The following guides were used as cheat sheets:
 
-Building a micrservice architecture with Spring Boot and Docker (four part series):
-https://www.3pillarglobal.com/insights/building-a-microservice-architecture-with-spring-boot-and-docker-part-i
-
 Dockerizing a Spring Boot application:
 http://www.baeldung.com/dockerizing-spring-boot-application
 
