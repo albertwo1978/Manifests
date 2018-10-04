@@ -7,10 +7,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - nodeapp.40.76.194.240.xip.io
+    - nodeapp.23.96.12.108.xip.io
     secretName: xipio-tls-cert
   rules:
-    - host: nodeapp.40.76.194.240.xip.io
+    - host: nodeapp.23.96.12.108.xip.io
       http:
         paths:
           - path: /
