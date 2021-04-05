@@ -1,4 +1,2 @@
 # Manifests
-
-
-branch1
+ master
