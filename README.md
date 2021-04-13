@@ -1,2 +1,2 @@
 # Manifests
- master
+ test
